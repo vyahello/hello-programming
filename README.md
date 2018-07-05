@@ -199,6 +199,20 @@ namespace printhello
 ~ csc printhello.cs  # compile
 ~ mono printhello.exe  # run C # code
 ```
+## Java
+```java
+class HelloWorld{
+        public static void main (String[] args)
+        {
+                System.out.println("Hello World");
+        }
+}
+```
+### Compile Java code
+```bash
+~ javac hello.java  # compile the code
+~ java HelloWorld  # run the code
+```
 ## Contributing
 
 ### Setup
