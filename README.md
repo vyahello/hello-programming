@@ -238,6 +238,19 @@ puts element_in_array 10, [1, 11, 10]
 ```bash
 ~ ruby find.rb
 ```
+## Python
+Say hello
+```python
+def say_hello() -> str:
+    return 'Hello friends!'
+
+print(say_hello())
+
+```
+### Run python code
+```bash
+~ python hello.py
+```
 ## Contributing
 
 ### Setup
