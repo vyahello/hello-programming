@@ -123,8 +123,8 @@ void main()
 ```
 ### Compile C code
 ```bash
-~ cc hello.c -o hello.out  # to compile
-~ ./h.out
+~ cc hello.c -o hello.out  # compile
+~ ./h.out  # run code
 ```
 ## C ++
 Sum of two integers
@@ -171,8 +171,8 @@ void printSome(){
 ```
 ### Compile C ++ code
 ```bash
-~ g++ hello.cpp -o hello.out
-~ ./basic.out
+~ g++ hello.cpp -o hello.out  # compile
+~ ./basic.out  # run code
 ```
 ## Contributing
 
