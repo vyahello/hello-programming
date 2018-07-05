@@ -151,6 +151,29 @@ int sum (int a, int b){
 
 }
 ```
+Say hello world
+```cpp
+#include<iostream>
+using namespace std;
+
+void printSome();
+
+int main(){
+        printSome();
+        return 0;
+}
+
+
+void printSome(){
+        cout << "I'm text" << endl;
+
+}
+```
+### Compile C ++ code
+```bash
+~ g++ hello.cpp -o hello.out
+~ ./basic.out
+```
 ## Contributing
 
 ### Setup
