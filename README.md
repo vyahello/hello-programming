@@ -174,6 +174,31 @@ void printSome(){
 ~ g++ hello.cpp -o hello.out  # compile
 ~ ./basic.out  # run code
 ```
+## C Sharp
+```cs
+using System;
+
+
+namespace printhello
+{
+  class printhello
+  {
+
+    public static void Main(string[] args)
+    {
+      System.Console.WriteLine("hello");
+    
+    }
+  }
+
+
+}
+```
+### Compile C Sharp code
+```bash
+~ csc printhello.cs  # compile
+~ mono printhello.exe  # run C # code
+```
 ## Contributing
 
 ### Setup
