@@ -213,6 +213,31 @@ class HelloWorld{
 ~ javac hello.java  # compile the code
 ~ java HelloWorld  # run the code
 ```
+## Ruby
+Say hello
+```rb
+def say_hello()
+  puts "Say hello"
+  end
+
+say_hello
+```
+Find element in array
+```rb
+def element_in_array(element, array)
+  if array.include?(element)
+    return "#{element} in array"
+  else "Not found"
+  end
+end
+
+puts element_in_array 10, [1, 11, 10]
+
+```
+### Run ruby code
+```bash
+~ ruby find.rb
+```
 ## Contributing
 
 ### Setup
