@@ -332,6 +332,37 @@ int main (int argc, const char * argv[])
 ~ clang -fobjc-arc -framework Foundation hello.m -o hello
 ~ ./hello
 ```
+## Swift
+Calculate fibonacci number
+```swift
+#!/usr/bin/swift
+
+func fibonacci(_ n: Int) -> Int {
+    if n <= 2 {
+        return 1
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2)
+    }
+}
+
+let arg = CommandLine.arguments[1]
+if let n = Int(arg) {
+    print(fibonacci(n))
+} else {
+    print("Usage: fibonacci <n>")
+}
+
+```
+Run Swift code
+```bash
+~ chmod u+x fibonnaci.swift
+~ ./fibonacci.swift 10
+```
+Compile Swift code
+```bash
+~ swiftc -o fibonacci fibonacci.swift
+~ ./fibonacci 10
+```
 ## Contributing
 
 ### Setup
