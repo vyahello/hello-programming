@@ -1,7 +1,6 @@
 # Say hello to the programming world
 Show how the basic thing are written in different programming languages.
 
-# Print to the console
 ## Perl
 ```bash
 ~ perl -e 'print "Hello World\n"'
@@ -250,6 +249,67 @@ print(say_hello())
 ### Run python code
 ```bash
 ~ python hello.py
+```
+## JavaScript
+Sum numbers
+```js
+function add() {
+    var tempValue = 0;
+    for (i = 0; i < arguments.length; i ++)
+    {
+        tempValue += arguments[i]
+    }
+    return tempValue;
+}
+var myValue = add(1, 2, 3, 4);
+alert(myValue);
+
+
+var addme = function () {
+    var tempValue = 0;
+    for (i = 0; i < arguments.length; i++) {
+        tempValue += arguments[i]
+    }
+    return tempValue;
+}
+
+alert(addme(5, 10, 15));
+
+var addMeOnceMoreTime = (function () {
+    return arguments[0] + arguments[1];
+})(1, 3);
+
+alert(addMeOnceMoreTime);
+
+```
+Substitute webElement with input text
+```js
+function substitute() {
+    var myValue = document.getElementById('myTextBox').value;
+    if (myValue.length === 0) {
+        alert('Please enter a real value in the text box');
+        return;
+    }
+    var myTitle = document.getElementById('title');
+    myTitle.innerHTML = myValue;
+}
+```
+Load JS script into HTML document
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Example</title>
+    <script type="text/javascript" src="script.js">
+    </script>
+</head>
+<body>
+    <h1 id="title">JavaScript Example</h1>
+
+    <input type="text" id="myTextBox"/>
+    <input type="submit" value="Click me" onclick="substitute()"/>
+</body>
+</html>
 ```
 ## Contributing
 
