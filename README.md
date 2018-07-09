@@ -311,6 +311,27 @@ Load JS script into HTML document
 </body>
 </html>
 ```
+## Objective C
+Say hello
+```objective-c
+#include <stdio.h>
+#include <objc/objc.h>
+
+void printOnScreen(char *quote, char *author, int age) {
+    printf("%s - %s, - %d\n", quote, author, age);
+}
+
+
+int main (int argc, const char * argv[])
+{
+    printOnScreen("Hello", "Friends", 32);
+}
+```
+### Compile Objective C code
+```bash
+~ clang -fobjc-arc -framework Foundation hello.m -o hello
+~ ./hello
+```
 ## Contributing
 
 ### Setup
