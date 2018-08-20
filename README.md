@@ -11,6 +11,7 @@ Show how the basic thing are written in different programming languages.
 - [Javascript](#javascript)
 - [Objective C](#objective-c)
 - [Swift](#swift)
+- [Groovy](#groovy)
 
 ## Perl
 ```bash
@@ -374,6 +375,166 @@ Compile Swift code
 ~ swiftc -o fibonacci fibonacci.swift
 ~ ./fibonacci 10
 ```
+
+## Groovy
+Function arguments typing
+```groovy
+class Person{
+    String first, last
+}
+
+
+def printInfo(first, second){
+  println "first name: $first, second name: $second"
+}
+
+
+def printFirstName(user){
+  println "user: $user.first"
+}
+
+
+def temp = new Person(first: 'Adam', last: 'Smith')
+printInfo(temp.first, temp.last)
+printFirstName(temp)
+
+
+def functionA(String str) {
+    println str
+}
+
+int functionB(int argB) {
+    argB + 2
+}
+
+String functionC() {
+    "Hello World"
+}
+
+
+functionA('String')
+println functionB(10)
+def fc = functionC()
+println fc
+```
+
+Define closure method
+
+```groovy
+class ClassWithClosure {
+    private int member = 20
+
+    static private String method()
+    {
+        return "hello"
+    }
+
+    def publicMethodWithClosure(String name_)
+    {
+        def localVar = member + 5
+        def localVar2 = "Parameter: ${name_}"
+        
+
+        return {
+            println "${member} ${name_} ${localVar} ${localVar2} ${method()}"
+        }
+    }
+}
+
+ClassWithClosure sample = new ClassWithClosure()
+def closureVar = sample.publicMethodWithClosure("Xavier")
+closureVar()
+```
+
+Define interfaces
+
+```groovy
+interface Voice {
+    void voice()
+    String getName()
+    String go()
+}
+
+
+class HRC implements Voice {
+
+    @Override
+    void voice() {
+        println "Voice"
+    }
+
+    @Override
+    String getName() {
+        return HRC.class.getSimpleName()
+    }
+
+    @Override
+    String go() {
+        "${HRC.class.getSimpleName()} is Moving"
+    }
+}
+
+def instance = new HRC() as Voice
+
+instance.voice()
+println instance.go()
+println  "Name is ${instance.getName()}"
+```
+
+Define abstract classes
+
+```groovy
+abstract class Shape {
+    final name
+    Shape(name) {this.name = name}
+    abstract printName()
+    abstract area()
+}
+
+
+class Circle extends Shape {
+    final radius
+    Circle(radius) {
+        super('circle')
+        this.radius = radius
+    }
+    def area() {
+        println "Area equals to ${Math.PI * radius * radius}"
+    }
+    def printName() {
+        println "I am a $name"
+    }
+}
+
+
+class Rectangle extends Shape {
+    final length, breadth
+    Rectangle(length, breadth) {
+        super("rectangle")
+        this.length = length
+        this.breadth = breadth
+    }
+
+    def printName() {
+        println "I am a $name."
+    }
+
+    def area() {
+        println "Area aquals to ${this.length * this.breadth}"
+    }
+}
+
+
+
+Shape circle = new Circle(10)
+Shape rectangle = new Rectangle(10, 20)
+circle.printName()
+circle.area()
+rectangle.printName()
+rectangle.area()
+
+```
+
 ## Contributing
 
 ### Setup
