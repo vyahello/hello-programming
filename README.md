@@ -1,6 +1,17 @@
 # Say hello to the programming world
 Show how the basic thing are written in different programming languages.
 
+## Table of contents
+- [Perl](#perl)
+- [C](#c)
+- [C Sharp](#c-sharp)
+- [Java](#java)
+- [Ruby](#ruby)
+- [Python](#python)
+- [Javascript](#javascript)
+- [Objective C](#objective-c)
+- [Swift](#swift)
+
 ## Perl
 ```bash
 ~ perl -e 'print "Hello World\n"'
