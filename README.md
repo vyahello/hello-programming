@@ -4,6 +4,7 @@ Show how the basic thing are written in different programming languages.
 ## Table of contents
 - [Perl](#perl)
 - [C](#c)
+- [C plus plus](#c-plus-plus)
 - [C Sharp](#c-sharp)
 - [Java](#java)
 - [Ruby](#ruby)
@@ -137,7 +138,7 @@ void main()
 ~ cc hello.c -o hello.out  # compile
 ~ ./h.out  # run code
 ```
-## C ++
+## C plus plus
 Sum of two integers
 ```cpp
 #include<iostream>
