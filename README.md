@@ -1,5 +1,5 @@
 # Say hello to the programming world
-Show how the basic thing are written in different programming languages.
+Show how the basic things (for studying purposes only) are written in different programming languages.
 
 ## Table of contents
 - [Perl](#perl)
@@ -537,8 +537,6 @@ rectangle.area()
 ```
 
 ## Contributing
-
-### Setup
 - clone the repository
 - configure Git for the first time after cloning with your name and email
   ```bash
